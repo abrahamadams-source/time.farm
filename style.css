@@ -21,13 +21,13 @@ header nav a[aria-current="page"] { text-decoration: underline; text-underline-o
 
 main { padding: 3rem 1.6rem 5rem; }
 
-/* works grid: justified rows, each image at natural width */
-.grid { display: flex; flex-wrap: wrap; gap: 2.5rem 2rem; }
-.grid::after { content: ""; flex-grow: 999999; }
-.tile { display: block; flex-grow: calc(var(--r) * 100); flex-basis: calc(var(--r) * 230px); min-width: 0; }
-.tile .frame { display: block; }
+/* works grid: uniform cells, every image at equal area, centered */
+.grid { display: grid; gap: 3rem 2rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.tile { display: block; }
+.tile .frame { display: flex; align-items: center; justify-content: center; aspect-ratio: 1 / 1; }
+.tile .fit { display: block; }
 .tile img { display: block; width: 100%; height: auto; }
-.tile .label { display: block; margin-top: .6rem; }
+.tile .label { display: block; margin-top: .6rem; text-align: center; }
 .tile:hover img { opacity: .85; }
 
 /* work page */
@@ -54,8 +54,7 @@ figcaption { color: var(--mute); font-size: 13px; margin-top: .6rem; max-width: 
 @media (max-width: 600px) {
   header { padding: 1rem 1rem 0; }
   main { padding: 2rem 1rem 4rem; }
-  .grid { gap: 2.25rem; }
-  .tile { flex-basis: 100%; }
+  .grid { grid-template-columns: 1fr; gap: 2.5rem; }
   figure img { max-height: none; }
 }
 
