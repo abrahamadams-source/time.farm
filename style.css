@@ -62,3 +62,7 @@ figcaption { color: var(--mute); font-size: 13px; margin-top: .6rem; max-width: 
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 .index-title { font-size: inherit; font-weight: normal; color: var(--mute); margin: 0 0 2rem; }
+
+.quote { max-width: 34em; margin: -2rem 0 3.5rem; padding: 0; }
+.quote p { margin: 0 0 .5rem; }
+.quote cite { font-style: normal; color: var(--mute); font-size: 13px; }
