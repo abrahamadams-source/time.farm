@@ -29,9 +29,9 @@ main { padding: 3rem 1.6rem 5rem; }
 .tile { display: block; }
 .tile .frame {
   display: flex; align-items: center; justify-content: center;
-  aspect-ratio: 1 / 1; background: #fafafa;
+  aspect-ratio: 1 / 1;
 }
-.tile img { max-width: 86%; max-height: 86%; width: auto; height: auto; display: block; }
+.tile img { max-width: 100%; max-height: 100%; width: auto; height: auto; display: block; }
 .tile .label { display: block; margin-top: .6rem; }
 .tile:hover img { opacity: .85; }
 
