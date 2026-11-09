@@ -66,3 +66,6 @@ figcaption { color: var(--mute); font-size: 13px; margin-top: .6rem; max-width: 
 .quote { max-width: 34em; margin: -2rem 0 3.5rem; padding: 0; }
 .quote p { margin: 0 0 .5rem; }
 .quote cite { font-style: normal; color: var(--mute); font-size: 13px; }
+
+.bio a { text-decoration: underline; text-decoration-color: #c8c8c8; text-underline-offset: 3px; }
+.bio a:hover { color: inherit; text-decoration-color: currentColor; }
