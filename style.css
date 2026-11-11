@@ -79,4 +79,7 @@ figcaption { color: var(--mute); font-size: 13px; margin-top: .6rem; max-width: 
 .cvlist a, .cv a { text-decoration: underline; text-decoration-color: #c8c8c8; text-underline-offset: 3px; }
 @media (max-width: 600px) { .cvlist li { grid-template-columns: 4.5rem 1fr; gap: .75rem; } }
 
-.portrait { display: block; width: 200px; height: auto; margin: 0 0 1.6em; }
+.info { display: flex; gap: 3em; align-items: flex-start; }
+.portrait-col { flex: 0 0 200px; padding-top: .3em; }
+.portrait { display: block; width: 200px; height: auto; }
+@media (max-width: 700px) { .info { flex-direction: column-reverse; gap: 1.6em; } }
