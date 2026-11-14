@@ -97,3 +97,10 @@ dialog.essay::backdrop { background: rgba(255,255,255,.82); backdrop-filter: blu
 .essay-close { position: absolute; top: .9rem; right: 1.1rem; font: inherit; font-size: 1.6em; line-height: 1; background: none; border: 0; cursor: pointer; color: var(--mute); }
 .essay-close:hover { color: inherit; }
 @media (max-width: 700px) { .essay-inner { padding: 2.4rem 1.4rem 2rem; } }
+
+dialog.film { border: 0; padding: 0; width: min(1100px, calc(100vw - 2rem)); background: #000; overflow: visible; box-shadow: 0 10px 40px rgba(0,0,0,.18); }
+dialog.film::backdrop { background: rgba(255,255,255,.88); backdrop-filter: blur(2px); }
+dialog.film .embed { position: relative; aspect-ratio: 16 / 9; }
+dialog.film iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.film-close { position: absolute; top: -2.2rem; right: 0; font: inherit; font-size: 1.6em; line-height: 1; background: none; border: 0; cursor: pointer; color: var(--mute); }
+.film-close:hover { color: var(--ink); }
